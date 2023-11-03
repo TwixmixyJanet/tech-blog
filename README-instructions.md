@@ -1,5 +1,47 @@
 # 14 Model-View-Controller (MVC): Tech Blog
 
+## PSEUDO-CODE
+Creating directories within the convention of MVC (Model-View-Control)
+- controllers, views, models folders
+- server.js
+### MODELS
+- Setting up your database
+- index to tie it all together
+- User, Post, Comments (Users <-> Posts/Comments one to many relationships)
+    - User -> id, username, password
+        - encrypt password, need some hooks
+    - Post -> id, title, description, date/timestamp(sequelize can do this for you, research!), fk_user_id
+    - Comments -> id, description, fk_post_id, fk_user_id
+### VIEWS
+- handlebarsjs
+- login/signup, homepage, dashboard, post(comments/newcomment-partial), new-post(edit-post)
+- folders for layouts and partials if you plan to use them
+    - layouts main? partials post/comment?
+### CONTROLLERS
+- routes! /api/ and home
+- index -> apiroutes, homeroutes
+- homeroutes -> (get) '/', '/login/', '/post/:id', '/user/:id'(for the dashboard)
+- /api/ index, user, (blog)post, comments
+    - get, post, put, delete
+    - index -> userroutes, postroutes, commentroutes
+    - (blog)post -> :id, title, description, (includes user)
+    - user -> :id, username, password
+    - comments -> :id, description (includes post/user), could do post.includes(comments)
+### Basics
+- server file, .env, .gitignore, readme
+- public (css, img, js)
+- config(connection)
+- db(schema)
+- seeds(index, postData?, commentData?)
+- utils(auth, helpers)
+### SERVER
+- NPMs: path, express, express-session, express-handlebars, sequelize, dotenv, 
+- middleware: 
+    - app.use express.json/urlencoded/static(public)
+    - engine, handlebars, helpers, session
+- session: secret, cookie
+
+
 ## Your Task
 
 Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
