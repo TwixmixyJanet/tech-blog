@@ -26,7 +26,7 @@ User.init(
             allowNull: false,
             unique: true,
             validate: {
-                ifEmail: true,
+                isEmail: true,
             },
         },
         password: {

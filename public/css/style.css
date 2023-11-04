@@ -22,7 +22,8 @@ h1 {
 
 main {
     margin-top: -5px;
-    background-color: var(--mint);
+    background-color: var(--bluemunsell);
+    padding: 20px;
 }
 
 .homepage-main {
@@ -34,7 +35,7 @@ main {
 }
 
 .user-name {
-    background-color: #508991;
+    background-color: var(--bluemunsell);
 }
 
 .navBar {
@@ -47,5 +48,17 @@ main {
 }
 
 #logout {
-    background-color: #004346;
+    background-color: var(--midnightgreen);
 }
+
+#titleInput,
+#bodyInput,
+#comment,
+#email-login,
+#password-login,
+#name-signup,
+#email-signup,
+#password-signup {
+    background-color: var(--bluemunsell);
+}
+
