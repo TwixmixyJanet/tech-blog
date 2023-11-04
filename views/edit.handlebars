@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mx-auto text-left">
+            <form action="" class="createBlogPost" id="submitEdit">
+                {{! POST }}
+                {{! title }}
+                <div class="mt-5 mb-3">
+                    <label for="titleInput" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="titleInput" maxlength="50" value="{{title}}" />
+                </div>
+                <div class="mb-3">
+                    <label for="bodyInput" class="form-label">Body</label>
+                    <textarea name="bodyInput" id="bodyInput" cols="30" rows="10" class="form-control">{{description}}</textarea>
+                </div>
+                <div class="text-center">
+                    <button class="text-center mt-3 btn btn-dark btn-lg btn-block">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/js/editPost.js"></script>
