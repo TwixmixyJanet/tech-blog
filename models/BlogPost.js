@@ -13,14 +13,14 @@ BlogPost.init(
             autoIncrement: true,
         },
         title: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         description: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.TEXT,
         },
         date_created: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DATE,
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
