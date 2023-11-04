@@ -1,0 +1,51 @@
+:root {
+    --carolinablue: #74B3CE;
+    --bluemunsell: #508991;
+    --prussianblue: #172A3A;
+    --midnightgreen: #004346;
+    --mint: #09BC8A;
+}
+
+body {
+    background-color: var(--carolinablue);
+}
+
+h1 {
+    color: var(--prussianblue);
+    padding: 16px;
+    margin-bottom: 5px;
+}
+
+#blogName {
+    color: var(--prussianblue);
+}
+
+main {
+    margin-top: -5px;
+    background-color: var(--mint);
+}
+
+.homepage-main {
+    margin-top: 34px;
+}
+
+.blogPost-main {
+    margin-top: 34px;
+}
+
+.user-name {
+    background-color: #508991;
+}
+
+.navBar {
+    background-color: var(--prussianblue);
+}
+
+.navBar a {
+    color: white;
+    padding: 20px;
+}
+
+#logout {
+    background-color: #004346;
+}
