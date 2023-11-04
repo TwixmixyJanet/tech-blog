@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Miley Cyrus",
+        "email": "likeawreckingball@gmail.com",
+        "password": "password1"
+    },
+    {
+        "name": "Billie Eilish",
+        "email": "everythingiwanted@gmail.com",
+        "password": "password2"
+    },
+    {
+        "name": "SZA",
+        "email": "killbill@gmail.com",
+        "password": "password3"
+    }
+]

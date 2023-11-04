@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Used To Be Young",
+        "description": "I know I used to be crazy, I know I used to be fun, You say I used to be wild, I say I used to be young",
+        "date_created": "August 25, 2023",
+        "user_id": 1
+    },
+    {
+        "title": "What Was I Made For?",
+        "description": "I used to float, now I just fall down, I used to know but I'm not sure now, What I was made for, What was I made for?",
+        "date_created": "December 9, 2022",
+        "user_id": 2
+    },
+    {
+        "title": "Forgiveless",
+        "description": "I thought I told you before, it's not gon' end how you want, Not in the dark anymore, I might forgive it, I won't forget it",
+        "date_created": "July 13, 2023",
+        "user_id": 3
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "comment_body": "What is this song about?",
+        "date_created": "September 18, 2023",
+        "user_id": 2,
+        "blogPost_id": 1
+    },
+    {
+        "comment_body": "I don't get it",
+        "date_created": "September 28, 2023",
+        "user_id": 3,
+        "blogPost_id": 1
+    },
+    {
+        "comment_body": "What is this song about?",
+        "date_created": "October 15, 2023",
+        "user_id": 1,
+        "blogPost_id": 2
+    },
+    {
+        "comment_body": "I don't get it",
+        "date_created": "October 15, 2023",
+        "user_id": 3,
+        "blogPost_id": 2
+    },
+    {
+        "comment_body": "What is this song about?",
+        "date_created": "November 4, 2023",
+        "user_id": 1,
+        "blogPost_id": 3
+    },
+    {
+        "comment_body": "I don't get it",
+        "date_created": "November 4, 2023",
+        "user_id": 2,
+        "blogPost_id": 3
+    }
+]
