@@ -24,6 +24,7 @@ main {
     margin-top: -5px;
     background-color: var(--bluemunsell);
     padding: 20px;
+    margin: 0 40px 0 40px;
 }
 
 .homepage-main {
@@ -48,7 +49,7 @@ main {
 }
 
 #logout {
-    background-color: var(--midnightgreen);
+    background-color: white;
 }
 
 #titleInput,
