@@ -26,6 +26,6 @@ async function newComment(event) {
     }
 }
 
-console.log("reached the event listeners");
+console.log("reached the new comment event listeners");
 console.log(document.getElementById("comment-form"));
 document.getElementById("comment-form").addEventListener("submit", newComment);
