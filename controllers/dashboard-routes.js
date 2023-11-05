@@ -32,6 +32,29 @@ router.get('/', withAuth, (req, res) => {
         where: {
             user_id: req.session.user_id,
         },
-        attributes: ["id", "title", "content", "created_at"]
+        attributes: ["id", "title", "description", "date_created"],
+        include: [
+            {
+                model: Comment,
+                attributes: ["id", "comment_body", "date_created", "user_id", "blogPost_id"],
+                include: {
+                    model: User,
+                    attributes: ["name"],
+                },
+            },
+            {
+                model: User,
+                attributes: ["name"],
+            },
+        ],
     })
-})
+    .then((postData) => {
+        const posts = postData.map((post) => post.get({ plain: true }));
+        res.render('dashboard', { posts, loggedIn: true });
+    })
+    .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
