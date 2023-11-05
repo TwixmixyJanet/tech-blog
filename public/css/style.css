@@ -13,10 +13,15 @@ body {
 
 h1 {
     color: var(--prussianblue);
+    font-family: var(--font-main);
     padding: 16px;
     margin-bottom: 5px;
-    font-family: var(--font-main);
     font-size: 48px;
+}
+
+h3 {
+    font-family: var(--font-main);
+    text-transform: uppercase;
 }
 
 #blogName {

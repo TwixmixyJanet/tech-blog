@@ -10,7 +10,6 @@
         <link rel="stylesheet" type="text/css" href="/css/jass.css">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
 
-        {{!-- any google fonts to add?? --}}
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -21,13 +20,13 @@
         <header class="navBar">
             <nav>
                 {{#if logged_in}}
-                <a href="/">Home</a>
-                <a href="/dashboard">Dashboard</a>
-                <button class="no-button" id="logout">Logout</button>
+                <a href="/">Home<i class="bi bi-house"></i></a>
+                <a href="/dashboard">Dashboard<i class="bi bi-speedometer"></i></a>
+                <button class="no-button" id="logout">Logout<i class="bi bi-box-arrow-in-right"></i></button>
                 {{else}}
-                <a href="/">Home</a>
-                <a href="/dashboard">Dashboard</a>
-                <a href="/login">Login</a>
+                <a href="/">Home<i class="bi bi-house"></i></a>
+                <a href="/dashboard">Dashboard<i class="bi bi-speedometer"></i></a>
+                <a href="/login">Login<i class="bi bi-box-arrow-in-left"></i></a>
                 {{/if}}
             </nav>
         </header>
@@ -35,7 +34,7 @@
         <main>
             {{{body}}}
         </main>
-        <footer class="text-center"><a href="https://github.com/TwixmixyJanet/tech-blog" target="_blank" rel="noopener noreferrer">Learn more about this project</a> 👾</footer>
+        <footer class="text-center"><a href="https://github.com/TwixmixyJanet/tech-blog" target="_blank" rel="noopener noreferrer">Learn more about this project<i class="bi bi-github"></i></a></footer>
         {{#if logged_in}}
         <script src="/js/logout.js"></script>
         {{/if}}
