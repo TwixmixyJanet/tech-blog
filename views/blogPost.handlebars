@@ -5,10 +5,8 @@
                 <h2>{{title}}</h2>
                 <p>Created by {{user.name}} on {{format_date date_created}}</p>
                 <p>{{description}}</p>
-                {{#if (is_my_page user.id userId)}}
                 <button class="btn btn-dark" id="editBtn">Edit</button>
                 <button class="btn btn-dark" id="deleteBtn">Delete</button>
-                {{/if}}
             </div>
             <div class="text-center">
                 <h3>Comments</h3>
