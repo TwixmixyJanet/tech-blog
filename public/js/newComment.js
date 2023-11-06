@@ -21,11 +21,11 @@ async function newComment(event) {
         if (response.ok) {
             document.location.reload();
         } else {
-            alert(response.statusText);
+            alert(`${response.statusText}
+            
+            Your comment may be too long. Try simplifying.`);
         }
     }
 }
 
-console.log("reached the new comment event listeners");
-console.log(document.getElementById("comment-form"));
 document.getElementById("comment-form").addEventListener("submit", newComment);
