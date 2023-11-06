@@ -41,7 +41,16 @@ This project is a full stack tech blog. It is a content management style website
 * Click on the deployed link above 'View Live Project Here'
 * To interact with this site, it requires a login
   * Navigate to the "LOGIN"
-  * Enter credentials (password must be at least 8 characters)
+  * Enter credentials
+  * After logging in, navigate to either an existing post, the dashboard or to logout.
+  * Existing posts on the homepage can be clicked on
+    * Read the post and add a comment with your thoughts
+  * Dashboard
+    * Add new post
+    * Edit existing post
+    * Delete existing post
+  * Logout
+* Interact with the page as needed
 
   ## User Story
 
