@@ -39,7 +39,9 @@ This project is a full stack tech blog. It is a content management style website
 ### How to use this app:
 
 * Click on the deployed link above 'View Live Project Here'
-* 
+* To interact with this site, it requires a login
+  * Navigate to the "LOGIN"
+  * Enter credentials (password must be at least 8 characters)
 
   ## User Story
 
