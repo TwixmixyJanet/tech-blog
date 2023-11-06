@@ -19,7 +19,10 @@ async function newPost(event) {
         if (response.ok) {
             document.location.replace('/dashboard');
         } else {
-            alert(response.statusText);
+            alert(`${response.statusText}
+            
+            Blog post did not meet necessary criteria. Please fill out all fields appropriately.
+            `);
         }
     }
 }
