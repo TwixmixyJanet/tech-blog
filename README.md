@@ -1,15 +1,21 @@
 # JANET'S TECH BLOG
 
 ### [View Project Video Here](https:// "JANET'S TECH BLOG")<br />
+### [View Live Project Here](https:// "JANET'S TECH BLOG")<br />
 ![image of JANET'S TECH BLOG](/public/img/projectimage.png "image of JANET'S TECH BLOG")
 | Technology Used    | Resource URL |
 | --------  | ------- |
 | NodeJS      | https://nodejs.org/en |
 | ExpressJS      | https://expressjs.com/ |
+| Handlebars | https://handlebarsjs.com/ |
 | dotenv      | https://www.npmjs.com/package/dotenv |
+| bcrypt      | https://www.npmjs.com/package/bcrypt |
+| Connect Session  | https://www.npmjs.com/package/connect-session-sequelize  |
+| Boostrap      | https://getbootstrap.com/ |
 | MySQL      | https://www.mysql.com/ |
 | mysql2      | https://www.npmjs.com/package/mysql2 |
 | Sequelize  | https://www.npmjs.com/package/sequelize |
+| Nodemon  | https://www.npmjs.com/package/nodemon |
 | Insomnia | https://insomnia.rest/ |
 | Sequel Ace | https://sequel-ace.com/ |
 | Screencastify | https://www.screencastify.com/ |
@@ -27,36 +33,13 @@
 * [License](#license)
 
 ## Description:
-This project is the backend of an e-commerse database.<br />
+This project is a full stack tech blog. It is a content management style website. This site allows the user to create, manage, and delete blog posts.<br />
 <br />
 
 ### How to use this app:
 
-* Recommended Requirements: 
-  * Node.JS
-  * CLI
-  * VSCode 
-* Installation:
-  * Clone the repo to your device 
-  * Initiate NPM 
-  * Install all dependencies
-  * Use MySQL to SOURCE schema.sql
-  * Use the terminal to run 'node seeds/index.js'
-* Use Integrated Terminal (CLI) 
-  * type "npm start" 
-* Open Insomnia app
-  * Run GET /api for /categories, /products/ and /tags
-  * Run GET specific :id /api for /categories, /products/ and /tags
-  * Run POST /api for /categories, /products/ and /tags
-    * {"name":"value"}
-  * Run PUT specific :id /api for /categories, /products/ and /tags
-    * {
-        "name":"value",
-        "decimal":"22.22",
-        "number":"18",
-        "forgeinkey_id":"4"
-      }
-  * Run DELETE specific :id /api for /categories, /products/ and /tags
+* Click on the deployed link above 'View Live Project Here'
+* 
 
   ## User Story
 
