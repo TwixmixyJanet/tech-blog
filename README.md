@@ -116,19 +116,21 @@ Let's go Handlebars!! This part, although very confusing to get the hang of, I f
 ![lesson 2](public/img/lesson2d.png)
 
 #### 3. MVC: CONTROLLERS(ROUTES)
-The routes was by far the hardest part of this project for me. I'm still not sure I got it right, but the application is working. Controllers manage the navigate and data flow through out the application, which is why this is a full stack project.
+The routes was by far the hardest part of this project for me. I'm still not sure I got it right, but the application is working. Controllers manage the navigate and data flow through out the application, which is why this is a full stack project. To begin with the index routes to all the other files and folders within the controllers, utilizing express router. A few more examples being the get all router for blog posts in the home routes, the login route for the users, and posting a new comment.
 <br />
-![lesson 3](assets/img/lesson3.png)
-![lesson 3](assets/img/lesson3b.png)
+![lesson 3](public/img/lesson3.png)
+![lesson 3](public/img/lesson3b.png)
+![lesson 3](public/img/lesson3c.png)
+![lesson 3](public/img/lesson3d.png)
 
-#### 4. Sequelize -> Models
-Using Sequelize allows us to do SQL type actions through methods. Instead of us writing long and potentially confusing SELECT statements, we can use this package manager.
+#### 4. Helpers
+Helpers are helpful! Using the express handlebars we can implement helpers for the server to manage aspects like formatting the date. I'm sure there's a lot more that can be accomplished here, but I am still playing with the idea of what all can be done.
 <br />
-![lesson 4](assets/img/lesson4.png)
-![lesson 4](assets/img/lesson4b.png)
+![lesson 4](public/img/lesson4.png)
+![lesson 4](public/img/lesson4b.png)
 
 #### Synopsis
-We were given a lot of starter code for this project, so the main aspects we had to complete we listed above in the lessons learned.
+FROM SCRATCH! We had to build out every aspect of this project. Laying out all the files and rough draft took hours. Thankfully we could rely heavily on the in class assignments and code drills to sort out the needs overall. This challenge was extremely necessary to begin understanding the overall concept of MVC and how it can be applied to an application.
 
 ## Installation
 
