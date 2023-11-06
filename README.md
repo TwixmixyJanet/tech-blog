@@ -139,7 +139,7 @@ We were given a lot of starter code for this project, so the main aspects we had
 
 ## Usage
 
-This is an ecommerce backend project. If you would like to use this app follow the installation steps and curate it to your needs. If you would like to use this app, follow the steps under the description 'How to' above and click the link at the top of this page.
+This is a full stack tech blog project. If you would like to update and use app follow the installation steps and curate it to your needs. If you would like to use this app, follow the steps under the description 'How to' above and click the link at the top of this page.
 
 ## License
 
@@ -158,3 +158,10 @@ Full Stack MERN Software Engineer in training.
 - [WakaTime](https://wakatime.com/@Twixmixy)
 
 ![Janet with her dog Winona on the beach](https://avatars.githubusercontent.com/u/117195025?v=4)
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+Did you really read down this far? Gold star for you! ⭐
+```
+You have received 5+ points in being EXTRA
+```
