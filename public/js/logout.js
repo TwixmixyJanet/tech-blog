@@ -7,7 +7,10 @@ const logout = async () => {
     if (response.ok) {
         document.location.replace('/');
     } else {
-        alert(response.statusText);
+        alert(`${response.statusText}
+            
+            Logout process did not meet criteria. Please try again.
+            `);
     }
 };
 

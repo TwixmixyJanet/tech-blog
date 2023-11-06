@@ -20,7 +20,10 @@ const submitEdit = async (event) => {
         if (response.ok) {
             document.location.assign('/dashboard');
         } else {
-            alert(response.statusText);
+            alert(`${response.statusText}
+            
+            Blog post did not meet necessary criteria. Please fill out all fields appropriately.
+            `);
         }
     }
 };

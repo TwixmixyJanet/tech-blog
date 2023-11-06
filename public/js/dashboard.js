@@ -13,7 +13,10 @@ const deletePost = async(event) => {
     if (response.ok) {
         document.location.assign(`/dashboard`);
     } else {
-        alert(response.statusText);
+        alert(`${response.statusText}
+            
+            For some reason this post cannot be deleted. Please try again.
+            `);
     }
 };
 

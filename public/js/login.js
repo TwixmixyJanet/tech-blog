@@ -14,7 +14,10 @@ const loginForm = async (event) => {
         if (response.ok) {
             document.location.replace('/');
         } else {
-            alert(response.statusText);
+            alert(`${response.statusText}
+            
+            Login does not match internal system records. Please try again.
+            `);
         }
     }
 };
@@ -36,7 +39,10 @@ const signupForm = async (event) => {
         if (response.ok) {
             document.location.replace('/');
         } else {
-            alert(response.statusText);
+            alert(`${response.statusText}
+            
+            Information does not meet criteria. Please try again.
+            `);
         }
     }
 };
