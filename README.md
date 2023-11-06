@@ -100,20 +100,23 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 ### Lessons Learned
 
-#### 1. .env file
-Using dotenv NPM and utilizing the .env file (while of course adding it to our gitignore) allows us to store our secure login information without sharing it in the repository. As the projects grow this is a crucual security measure to implement.
+#### 1. MVC: MODELS
+Thank GOODNESS for sequelize! Not that I don't like SQL, but using sequelize to model things out is beyond beneficial and so much easier to use and test. As you will see there is plenty of error-catching throughout my code to find potential issues. Highly recommend!
+When it comes to models I learned how to connect tables together through what we deemed as the index file. Then from there we broke out a model file for each table of data, for example the BlogPost.
 <br />
-![lesson 1](assets/img/lesson1.png)
-![lesson 1](assets/img/lesson1b.png)
+![lesson 1](public/img/lesson1.png)
+![lesson 1](public/img/lesson1b.png)
 
-#### 2. API Routes
-Expanding on API Routes to navigate the database. This was the major task for this project was being able to create and execute the GET, POST, PUT, and DELETE routes. More specifically, the SQL database.
+#### 2. MVC: VIEWS
+Let's go Handlebars!! This part, although very confusing to get the hang of, I find to be super exciting. Modulating pages is a great way to scale projects quickly. With handlebars we are able to modulate our HTML so that it is easy to reuse throughout the application. For example we start with the main page for the layout, then we have several additional pages to handle different aspects of the application. We can also use partials to manage parts of an existing page. Examples shown are the main, dashboard, blogpost, and dashboardpost.
 <br />
-![lesson 2](assets/img/lesson2.png)
-![lesson 2](assets/img/lesson2b.png)
+![lesson 2](public/img/lesson2.png)
+![lesson 2](public/img/lesson2b.png)
+![lesson 2](public/img/lesson2c.png)
+![lesson 2](public/img/lesson2d.png)
 
-#### 3. JavaScript seeds
-Instead of running schema and seed files through the MySQL shell, we learned to execute JavaScript files to do this work. This is done through Sequelize methods.
+#### 3. MVC: CONTROLLERS(ROUTES)
+The routes was by far the hardest part of this project for me. I'm still not sure I got it right, but the application is working. Controllers manage the navigate and data flow through out the application, which is why this is a full stack project.
 <br />
 ![lesson 3](assets/img/lesson3.png)
 ![lesson 3](assets/img/lesson3b.png)
