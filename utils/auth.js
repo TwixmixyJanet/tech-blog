@@ -1,4 +1,4 @@
-// user authentification
+// USER AUTHENTIFICATION
 const withAuth = (req, res, next) => {
     console.log(req.session.logged_in);
 
@@ -9,5 +9,5 @@ const withAuth = (req, res, next) => {
     }
 };
 
-// export
+// EXPORTS
 module.exports = withAuth;

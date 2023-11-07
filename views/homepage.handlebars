@@ -1,12 +1,16 @@
 <div class="container">
     <div class="row homepage-main">
+        {{!-- Displaying all blog posts! --}}
         {{#each blogPosts as |blogPost|}}
         <div class="row mb-4 project card text-dark shadow">
             <div class="card-header">
+                {{!-- Link to individual blog post through title --}}
                 <h3><a href="/blogPost/{{blogPost.id}}">{{blogPost.title}}</a></h3>
+                {{!-- Create by info, featuring format date helper --}}
                 <p class="subtext">Create by {{blogPost.user.name}} on {{format_date blogPost.date_created}}</p>
             </div>
             <div class="card-body">
+                {{!-- Blog post body --}}
                 <p>{{blogPost.description}}</p>
             </div>
         </div>

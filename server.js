@@ -1,4 +1,4 @@
-// imports
+// IMPORTS
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -12,14 +12,14 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// handlebars engine
+// HELPERS
 const hbs = exphbs.create({ helpers });
 
 // session / cookies
 const sess = {
     secret: "Super secret secret",
     cookie: {
-        maxAge: 1200000,
+        maxAge: 2200000,
         httpOnly: true,
         secure: false,
         sameSite: "strict",
@@ -31,15 +31,14 @@ const sess = {
 
 app.use(session(sess));
 
-// template engine
+// HANDLEBARS {} TEMPLATE ENGINE
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-// middleware
+// MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(routes);
 
 sequelize.sync({ force:false }).then(() => {

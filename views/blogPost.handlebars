@@ -2,12 +2,14 @@
     <div class="row">
         <div class="card text-dark shadow mb-3 blogPost-main">
             <div class="text-center mx-auto p-3">
+                {{!-- Individual page blog post --}}
                 <h2>{{title}}</h2>
                 <p class="subtext">Created by {{user.name}} on {{format_date date_created}}</p>
                 <p class="blog-description">{{description}}</p>
             </div>
             <div class="text-center">
                 <h3>Comments</h3>
+                {{!-- Display each comment --}}
                 {{#each comments as |comment|}}
                 <div>
                     <p class="comments">{{comment.comment_body}} by {{comment.user.name}} on {{format_date comment.date_created}}</p>
@@ -17,9 +19,9 @@
         </div>
     </div>
 </div>
-
+{{!-- Partial to include comment form for new comments --}}
 {{> comment-form}}
-
+{{!-- ALL the JS for comments, deleting and editing blog posts --}}
 <script src="/js/newComment.js"></script>
 <script src="/js/deleteBlogPost.js"></script>
 <script src="/js/editBlogPost.js"></script>
