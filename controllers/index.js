@@ -1,19 +1,19 @@
-// imports
+// IMPORTS
 const router = require('express').Router();
 
 const apiRoutes = require('./api');
 const homeRoutes = require('./home-routes');
-const dashboardRoutes = require('./dashboard-routes');
+// const dashboardRoutes = require('./dashboard-routes');
 
-// middleware
+// MIDDLEWARE
 router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
-router.use('/dashboard', dashboardRoutes);
+// router.use('/dashboard', dashboardRoutes);
 
-// error
+// ERROR HANDLING
 router.use((req, res) => {
     res.status(404).end();
 });
 
-// exports
+// EXPORT
 module.exports = router;
