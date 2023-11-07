@@ -1,8 +1,11 @@
+// Mostly the same comments as in editPostSubmit
+
 const deletePost = async(event) => {
     event.preventDefault();
     console.log("delete post clicked");
     console.log(event.target);
 
+    // Selecting post by the data-id
     let blogPostId = event.target.getAttribute("data-id");
     console.log('blogpostID', blogPostId);
 

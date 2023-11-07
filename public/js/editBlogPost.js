@@ -1,3 +1,5 @@
+// Same comments as in editPostSubmit
+
 let blogPost = window.location.pathname.split('/');
 
 const editPost = async (event) => {
@@ -13,6 +15,7 @@ const editPost = async (event) => {
 
 const editButton = document.querySelectorAll("#editBtn");
 
+// Generate an edit button for each post
 for (let i = 0; i < editButton.length; i++) {
     editButton[i].addEventListener("click", editPost);
 }

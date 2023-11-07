@@ -10,7 +10,7 @@ const submitEdit = async (event) => {
     // IF title and description are true then post
     if (title && description) {
         // Using the split blogpost array of strings
-        // http://localhost:3001/create/4 -> /4 is the positin of [2]
+        // http://localhost:3001/blogPost/1
         const response = await fetch(`/api/blogPost/${blogPost[2]}`, {
             method: "PUT",
             body: JSON.stringify({

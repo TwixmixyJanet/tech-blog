@@ -1,3 +1,5 @@
+// Same comments as in editPostSubmit
+
 const deletePost = async (event) => {
     event.preventDefault();
     console.log("clicked delete post");
@@ -22,6 +24,7 @@ const deletePost = async (event) => {
 
 const deleteButton = document.querySelectorAll("#deleteBtn");
 
+// Generate a delete button for each post
 for (let i = 0; i < deleteButton.length; i++) {
     deleteButton[i].addEventListener("click", deletePost);
 }
