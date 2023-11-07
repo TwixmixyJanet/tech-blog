@@ -1,3 +1,4 @@
+// Function for logout, basically same as login, ultimately redirect to homepage
 const logout = async () => {
     const response = await fetch('/api/users/logout', {
         method: "POST",
@@ -14,4 +15,5 @@ const logout = async () => {
     }
 };
 
+// Click the logout button
 document.querySelector("#logout").addEventListener("click", logout);

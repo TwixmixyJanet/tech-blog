@@ -1,11 +1,16 @@
+// Splits the current URL mathname into an array of strings
 let blogPost = window.location.pathname.split('/');
 
+// Function to handle the submission of edits to a blog post
 const submitEdit = async (event) => {
     event.preventDefault();
     const title = document.getElementById("titleInput").value;
     const description = document.getElementById("bodyInput").value;
 
+    // IF title and description are true then post
     if (title && description) {
+        // Using the split blogpost array of strings
+        // http://localhost:3001/create/4 -> /4 is the positin of [2]
         const response = await fetch(`/api/blogPost/${blogPost[2]}`, {
             method: "PUT",
             body: JSON.stringify({
@@ -16,7 +21,8 @@ const submitEdit = async (event) => {
                 "Content-Type": "application/json",
             },
         });
-        console.log(response)
+        
+        // IF ok then redirect to dashboard
         if (response.ok) {
             document.location.assign('/dashboard');
         } else {
@@ -28,6 +34,6 @@ const submitEdit = async (event) => {
     }
 };
 
+// Submit button document selector and event listester
 const submitButton = document.getElementById("submitEdit");
-
 submitButton.addEventListener("submit", submitEdit);
