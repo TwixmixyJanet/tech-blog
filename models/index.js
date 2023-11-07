@@ -3,7 +3,7 @@ const User = require('./User');
 const BlogPost = require('./BlogPost');
 const Comment = require('./Comment');
 
-// relationships between model tables
+// RELATIONSHIPS between models
 User.hasMany(BlogPost, {
     foreignKey: "user_id",
     onDelete: 'CASCADE',
@@ -32,4 +32,5 @@ BlogPost.hasMany(Comment, {
     onDelete: 'CASCADE',
 });
 
+// EXPORT
 module.exports = { User, BlogPost, Comment };

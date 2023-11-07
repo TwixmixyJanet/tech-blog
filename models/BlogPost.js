@@ -1,6 +1,8 @@
-// import
+// IMPORT
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+
+// See User.js for comments
 
 class BlogPost extends Model {}
 
