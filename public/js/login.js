@@ -4,6 +4,7 @@ const loginForm = async (event) => {
     // DOCUMENT CONNECTIONS
     const email = document.querySelector("#email-login").value.trim();
     const password = document.querySelector("#password-login").value.trim();
+    const error = document.getElementById("login-error");
 
     // IF email and password are true then fetch user login api, stringifying content
     if (email && password) {
@@ -17,11 +18,11 @@ const loginForm = async (event) => {
         if (response.ok) {
             document.location.replace('/');
         } else {
-            // Otherwise send error response
-            alert(`${response.statusText}
-            
-            Login does not match internal system records. Please try again.
-            `);
+            console.log(response);
+            response.json()
+            .then(dataErr => {
+                error.innerHTML = `<p class="error">${dataErr.message}</p>`;
+            }); 
         }
     }
 };
@@ -40,16 +41,19 @@ const signupForm = async (event) => {
             body: JSON.stringify({ name, email, password }),
             headers: { "Content-Type": "application/json" },
         });
-
+        console.log(response.json);
         if (response.ok) {
             document.location.replace('/');
         } else {
-            // alert(`${response.statusText}
-            
-            // Information does not meet criteria. Please try again.
-            // `); 
-            console.log(response.statusText)
-            error.innerHTML = "Information does not meet criteria. Please try again.";
+            response.json()
+            .then(dataErr => {
+                console.log(dataErr);
+                let errorString = dataErr.errors.map(error => 
+                    error.message
+                    ).join("<br />");
+                error.innerHTML = `<p class="error">${errorString}<br />
+                Please try again.</p>`;
+            });
         }
     }
 };

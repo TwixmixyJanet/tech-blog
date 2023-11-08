@@ -30,7 +30,9 @@ User.init(
             unique: true,
             validate: {
                 // verifies if email format
-                isEmail: true,
+                isEmail: {
+                    msg: 'Invalid email address.'
+                }
             },
         },
         password: {
@@ -38,7 +40,10 @@ User.init(
             allowNull: false,
             validate: {
                 // limit password length
-                len: [8],
+                len: {
+                   args: [8],
+                   msg: 'Password does not meet length requirement.',
+                }
             },
         },
     },
