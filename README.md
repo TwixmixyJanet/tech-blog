@@ -1,7 +1,6 @@
 # JANET'S TECH BLOG
 
-### [View Project Video Here](https:// "JANET'S TECH BLOG")<br />
-### [View Live Project Here](https:// "JANET'S TECH BLOG")<br />
+### [View Live Project Here](https://janets-tech-blog-a73a7af9497f.herokuapp.com/ "JANET'S TECH BLOG")<br />
 ![image of JANET'S TECH BLOG](/public/img/projectimage.png "image of JANET'S TECH BLOG")
 | Technology Used    | Resource URL |
 | --------  | ------- |
