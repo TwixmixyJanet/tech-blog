@@ -30,10 +30,12 @@ async function newComment(event) {
             response.json()
             .then(dataErr => {
                 console.log(dataErr);
-                let errorString = dataErr.errors.map(error => error.message).join(" ");
-                console.log(errorString)
-                error.innerHTML = `<p class="error">${errorString}<br />
-                Please try again.</p>`;
+                // let errorString = dataErr.errors.map(error => error.message).join(" ");
+                // console.log(errorString)
+                // error.innerHTML = `<p class="error">${errorString}<br />
+                // Please try again.</p>`;
+                console.log(dataErr.errors[0].message);
+                error.innerHTML = `<p class="error">${dataErr.errors[0].message}</p>`;
             }); 
         }
     }
