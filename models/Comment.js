@@ -17,6 +17,7 @@ Comment.init(
         comment_body: {
             type: DataTypes.STRING,
             allowNull: false,
+            // Added validation args and msg to send better error respones
             validate: {
                 len: {
                    args: [6, 200],

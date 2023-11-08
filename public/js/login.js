@@ -43,6 +43,7 @@ const signupForm = async (event) => {
         if (response.ok) {
             document.location.replace('/');
         } else {
+            // Pulled error message from Model
             response.json()
             .then(dataErr => {
                 let errorString = dataErr.errors.map(error => 

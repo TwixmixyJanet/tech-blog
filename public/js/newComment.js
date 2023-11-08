@@ -27,6 +27,7 @@ async function newComment(event) {
             document.location.reload();
         } else {
             // Otherwise send error
+            // Pulled error message from Model
             response.json()
             .then(dataErr => {
                 error.innerHTML = `<p class="error">${dataErr.errors[0].message}</p>`;
