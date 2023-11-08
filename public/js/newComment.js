@@ -7,6 +7,7 @@ async function newComment(event) {
     const comment_body = document.getElementById("comment").value.trim();
     const url = window.location.toString().split('/');
     const blogPost_id = url[url.length - 1];
+    const error = document.getElementById("comment-error");
 
     // IF comment body meets criteria then it will post
     if (comment_body) {
@@ -26,9 +27,14 @@ async function newComment(event) {
             document.location.reload();
         } else {
             // Otherwise send error
-            alert(`${response.statusText}
-            
-            Your comment may be too long. Try simplifying.`);
+            response.json()
+            .then(dataErr => {
+                console.log(dataErr);
+                let errorString = dataErr.errors.map(error => error.message).join(" ");
+                console.log(errorString)
+                error.innerHTML = `<p class="error">${errorString}<br />
+                Please try again.</p>`;
+            }); 
         }
     }
 }

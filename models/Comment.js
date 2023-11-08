@@ -17,6 +17,12 @@ Comment.init(
         comment_body: {
             type: DataTypes.STRING,
             allowNull: false,
+            validate: {
+                len: {
+                   args: [6, 30],
+                   msg: 'Comment must be between 6-30 characters.',
+                }
+            },
         },
         date_created: {
             type: DataTypes.DATE,

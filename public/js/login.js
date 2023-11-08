@@ -18,7 +18,6 @@ const loginForm = async (event) => {
         if (response.ok) {
             document.location.replace('/');
         } else {
-            console.log(response);
             response.json()
             .then(dataErr => {
                 error.innerHTML = `<p class="error">${dataErr.message}</p>`;
@@ -41,13 +40,11 @@ const signupForm = async (event) => {
             body: JSON.stringify({ name, email, password }),
             headers: { "Content-Type": "application/json" },
         });
-        console.log(response.json);
         if (response.ok) {
             document.location.replace('/');
         } else {
             response.json()
             .then(dataErr => {
-                console.log(dataErr);
                 let errorString = dataErr.errors.map(error => 
                     error.message
                     ).join("<br />");
